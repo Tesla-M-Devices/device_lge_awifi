@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/lge/awifi/device.mk)
 $(call inherit-product-if-exists, vendor/lge/awifi/awifi-vendor.mk)
 
-# Inherit some common CM stuff
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common Tesla stuff
+$(call inherit-product, vendor/tesla/config/common_full_tablet_wifionly.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := awifi
-PRODUCT_NAME := cm_awifi
+PRODUCT_NAME := tesla_awifi
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-V500
 PRODUCT_MANUFACTURER := LGE
